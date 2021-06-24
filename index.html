@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color with Dropdown Menu using JS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <section>
+        <div class="theBox">black</div>
+        <select class="theColor" id="" onchange="changeColor(this)">
+            <option value="#000">black</option>
+            <option value="#546de5">blue</option>
+            <option value="#32ff7e">green</option>
+            <option value="#fff200">yellow</option>
+            <option value="#303952">biscay</option>
+        </select>
+    </section>
+
+    <script type="text/javascript">
+
+        function changeColor(getColor) {
+
+            //Getting the box 
+            
+            let theBox = document.querySelector('.theBox');
+            let selectBox = document.querySelector('.theColor');
+
+            let selectColor = getColor.value;
+
+            //Getting the option in select
+
+            let text = getColor.options[getColor.selectedIndex].text;
+
+            theBox.style.background = selectColor;
+            selectBox.style.color = selectColor;
+
+            theBox.innerHTML = text;
+        }
+
+    </script>
+</body>
+</html>

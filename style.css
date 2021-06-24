@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.theBox {
+  padding-top: 26px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  transition: 05s ease;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 25vw;
+  font-weight: 700;
+  white-space: nowrap;
+  user-select: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.theColor {
+  position: relative;
+  padding: 10px;
+  border: none;
+  outline: none;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  text-transform: capitalize;
+}
